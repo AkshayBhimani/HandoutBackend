@@ -10,13 +10,13 @@ public class Tutorial {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
-	@Column(name = "title")
+	@Column(name = "fileName")
 	private String title;
 
-	@Column(name = "description")
+	@Column(name = "ipAddress")
 	private String description;
 
-	@Column(name = "published")
+	@Column(name = "isAvailable", columnDefinition = "boolean default false")
 	private boolean published;
 
 	public Tutorial() {
